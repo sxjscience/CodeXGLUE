@@ -12,7 +12,7 @@ eval_steps=5000 #400 for ruby, 600 for javascript, 1000 for others
 train_steps=100000 #20000 for ruby, 30000 for javascript, 50000 for others
 pretrained_model=CodeBERT1 #CodeBERT: path to CodeBERT. Roberta: roberta-base
 
-CUDA_VISIBLE_DEVICES=0,1 ~/anaconda3/bin/python run.py \
+CUDA_VISIBLE_DEVICES=0,1 python3 run.py \
 --do_train \
 --do_eval \
 --model_type roberta \
