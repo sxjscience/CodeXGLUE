@@ -10,7 +10,7 @@ train_file=$data_dir/train.buggy-fixed.buggy,$data_dir/train.buggy-fixed.fixed
 dev_file=$data_dir/valid.buggy-fixed.buggy,$data_dir/valid.buggy-fixed.fixed
 eval_steps=5000 #400 for ruby, 600 for javascript, 1000 for others
 train_steps=100000 #20000 for ruby, 30000 for javascript, 50000 for others
-pretrained_model=CodeBERT1 #CodeBERT: path to CodeBERT. Roberta: roberta-base
+pretrained_model=microsoft/codebert-base #CodeBERT: path to CodeBERT. Roberta: roberta-base
 
 CUDA_VISIBLE_DEVICES=0,1 python3 run.py \
 --do_train \
